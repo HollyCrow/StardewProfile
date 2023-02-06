@@ -1,0 +1,84 @@
+@font-face {
+    font-family: sv;
+    src: url("font.ttf");
+}
+
+body {
+    color: #58150D;
+    background-color: #595959;
+    font-family: sv;
+}
+
+#main{
+    position: relative;
+    width: 1600px;
+    height: 1200px;
+}
+
+#main img {
+    width: 1600px;
+    height: 1200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#main div {
+    position: absolute;
+}
+#main p {
+    position: absolute;
+}
+
+#pfp {
+    top: 200px;
+    left: 142px;
+    width: 370px;
+    height: 369px;
+
+    background-color: #FFFFFF;
+}
+
+#pfp img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#name {
+    top: 627px;
+    left: 149px;
+    width: 360px;
+    height: 55px;
+    text-align: center;
+    font-size: 55px;
+}
+
+#bio {
+    top: 240px;
+    left: 600px;
+    width: 600px;
+    height: 200px;
+    font-size: 40px;
+}
+
+#full-image {
+    top: 189px;
+    left: 1319px;
+    width: 104px;
+    height: 168px;
+    background-color: #FFFFFF;
+}
+
+#season {
+    top: 1011px;
+    left: 145px;
+    width: 237px;
+    height: 65px;
+    font-size: 65px;
+    text-align: center;
+}
+
+#day {
+
+}

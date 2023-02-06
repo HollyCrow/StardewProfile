@@ -100,3 +100,36 @@ body {
 
     /*background-color: #FFFFFF;*/
 }
+
+
+
+#love {
+    top: 654px;
+    left: 703px;
+    width: 1000px;
+    height: 65px;
+}
+
+#love img {
+    position: relative;
+    width: 65px;
+    height: 65px;
+    padding-right: 44.75px;
+/*TODO: fix that*/
+}
+
+
+#hate {
+    top: 802px;
+    left: 703px;
+    width: 1000px;
+    height: 65px;
+}
+
+#hate img {
+    position: relative;
+    width: 65px;
+    height: 65px;
+    padding-right: 44.75px;
+}
+

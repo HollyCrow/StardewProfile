@@ -149,3 +149,31 @@ body {
 /*    Strange image this one*/
 }
 
+
+#pet {
+    top: 766px;
+    left: 179px;
+}
+#pet img {
+    position: relative;
+    width: 65px;
+    height: 65px;
+}
+#pet h1 {
+    text-align: center;
+}
+
+
+
+#horse {
+    top: 766px;
+    left: 407px;
+}
+#horse img {
+    position: relative;
+    width: 65px;
+    height: 65px;
+}
+#horse h1 {
+    text-align: center;
+}

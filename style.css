@@ -79,6 +79,24 @@ body {
     text-align: center;
 }
 
-#day {
+#day0 {
+    top: 1011px;
+    left: 437px;
+    width: 32.5px;
+    height: 65px;
+    font-size: 65px;
+    text-align: center;
 
+    /*background-color: #FFFFFF;*/
+}
+
+#day1 {
+    top: 1011px;
+    left: 472px;
+    width: 33px;
+    height: 65px;
+    font-size: 65px;
+    text-align: center;
+
+    /*background-color: #FFFFFF;*/
 }

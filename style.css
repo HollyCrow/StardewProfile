@@ -133,3 +133,19 @@ body {
     padding-right: 44.75px;
 }
 
+
+#people {
+    top: 951px;
+    left: 616px;
+    width: 1000px;
+    height: 65px;
+}
+
+#people img {
+    position: relative;
+    width: 123px;
+    height: 123px;
+    padding-right: 50.5px;
+/*    Strange image this one*/
+}
+

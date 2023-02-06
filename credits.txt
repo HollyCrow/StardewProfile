@@ -2,7 +2,7 @@ Stardew valley - ConcernedApe
 
 Font - u/cowsplay https://www.reddit.com/r/StardewValley/comments/4dtgp7/by_popular_request_a_stardew_valley_font_for_your/
 Base image - https://www.reddit.com/r/StardewValley/comments/k740st/i_spent_the_better_part_of_today_making_a/?utm_source=share&utm_medium=ios_app&utm_name=iossmf
-
+html2canvas - https://html2canvas.hertzen.com/
 
 Many links sumarised in this comment: https://www.reddit.com/r/StardewValley/comments/k740st/comment/geomps8/?utm_source=share&utm_medium=web2x&context=3
 

@@ -11,10 +11,22 @@ function copy(){
                     )
                 ])
                 .then(function() {
-                    // do something
+                    console.log("Coppied to clipboard")
                 });
         });
-        // console.log(canvas.toDataURL())
-        // document.body.appendChild(canvas)
     });
+}
+
+function changeImage() {
+    var img = document.getElementsByClassName("loved")[0];
+    img.src="deez nuts";
+    return false;
+}
+
+function dosubmit (event) {
+    event.preventDefault();
+    let pfp = document.getElementById("pfp_img")
+    pfp.src = document.getElementById("profile").value
+    console.log(document.getElementById("profile").value)
+    pfp.alt="fuck"
 }

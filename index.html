@@ -6,11 +6,18 @@
     <title>Stardew Profile</title>
     <script src="index.js"></script>
     <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
-
-
 </head>
 <body>
 <button onclick='copy()'>Copy</button>
+<button onclick='changeImage()'>change</button>
+
+<form onsubmit="dosubmit(event)" id="input">
+    <label for="profile">Profile image link:</label>
+    <input type="text" id="profile" name="profile"><br><br>
+    <label for="full">Full sprite image link:</label>
+    <input type="text" id="full" name="full"><br><br>
+    <input type="submit">
+</form>
 
 <div id="main">
 
@@ -19,7 +26,7 @@
 
     <!--Profile picture-->
     <div id="pfp">
-        <img src="your image link" alt="Profile image">
+        <img src="your image link" alt="Profile image" id="pfp_img">
     </div>
     <img src="pfpoverlay.png" alt="Base image, kind of required">
 
@@ -61,22 +68,22 @@
 
     <div id="love">
 <!--        TODO: not this-->
-        <img src="example.png" alt="Loved item">
-        <img src="example.png" alt="Loved item">
-        <img src="example.png" alt="Loved item">
-        <img src="example.png" alt="Loved item">
-        <img src="example.png" alt="Loved item">
-        <img src="example.png" alt="Loved item">
-        <img src="example.png" alt="Loved item">
+        <img src="example.png" alt="Loved item" class="loved">
+        <img src="example.png" alt="Loved item" class="loved">
+        <img src="example.png" alt="Loved item" class="loved">
+        <img src="example.png" alt="Loved item" class="loved">
+        <img src="example.png" alt="Loved item" class="loved">
+        <img src="example.png" alt="Loved item" class="loved">
+        <img src="example.png" alt="Loved item" class="loved">
     </div>
     <div id="hate">
-        <img src="example.png" alt="Hated item">
-        <img src="example.png" alt="Hated item">
-        <img src="example.png" alt="Hated item">
-        <img src="example.png" alt="Hated item">
-        <img src="example.png" alt="Hated item">
-        <img src="example.png" alt="Hated item">
-        <img src="example.png" alt="Hated item">
+        <img src="example.png" alt="Hated item" class="hated">
+        <img src="example.png" alt="Hated item" class="hated">
+        <img src="example.png" alt="Hated item" class="hated">
+        <img src="example.png" alt="Hated item" class="hated">
+        <img src="example.png" alt="Hated item" class="hated">
+        <img src="example.png" alt="Hated item" class="hated">
+        <img src="example.png" alt="Hated item" class="hated">
     </div>
 
 

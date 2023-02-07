@@ -46,3 +46,15 @@ function dosubmit (event) {
     // console.log(document.getElementById("profile").value)
     //pfp.alt="fuck"
 }
+
+
+
+const pets = {
+    "cat 1": "https://stardewvalleywiki.com/mediawiki/images/thumb/1/1e/Cat_1.png/48px-Cat_1.png",
+    "cat 2": "https://stardewvalleywiki.com/mediawiki/images/thumb/8/83/Cat_2.png/48px-Cat_2.png",
+    "cat 3": "https://stardewvalleywiki.com/mediawiki/images/thumb/e/ec/Cat_3.png/48px-Cat_3.png",
+    "dog 1": "https://stardewvalleywiki.com/mediawiki/images/thumb/a/a4/Dog_1.png/48px-Dog_1.png",
+    "dog 2": "https://stardewvalleywiki.com/mediawiki/images/thumb/b/bb/Dog_2.png/48px-Dog_2.png",
+    "dog 3": "https://stardewvalleywiki.com/mediawiki/images/thumb/f/fc/Dog_3.png/48px-Dog_3.png",
+    "horse": "https://stardewvalleywiki.com/mediawiki/images/c/c3/Horse.png"
+}

@@ -36,7 +36,6 @@ body {
     width: 367px;
     height: 367px;
 
-    background-color: #FFFFFF;
 }
 
 #pfp img {
@@ -67,7 +66,7 @@ body {
     left: 1319px;
     width: 104px;
     height: 168px;
-    background-color: #FFFFFF;
+    /*background-color: #FFFFFF;*/
 }
 
 #season {
@@ -176,4 +175,10 @@ body {
 }
 #horse h1 {
     text-align: center;
+}
+
+#input {
+    background-color: #A9A9A9;
+    padding: 30px;
+    margin: 30px;
 }

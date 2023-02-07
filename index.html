@@ -8,14 +8,47 @@
     <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
 </head>
 <body>
-<button onclick='copy()'>Copy</button>
-<button onclick='changeImage()'>change</button>
 
 <form onsubmit="dosubmit(event)" id="input">
-    <label for="profile">Profile image link:</label>
-    <input type="text" id="profile" name="profile"><br><br>
-    <label for="full">Full sprite image link:</label>
-    <input type="text" id="full" name="full"><br><br>
+
+    <label for="name_input">Character name: </label>
+    <input type="text" id="name_input" name="full"><br><br>
+
+    <label for="bio_input" >Character biography:</label>
+    <textarea rows="12" id="bio_input" name="full"></textarea><br><br>
+
+    <label for="pet_input">Pet name:</label>
+    <input type="text" id="pet_input" name="full"><br><br>
+
+    <label for="horse_input">Horse name:</label>
+    <input type="text" id="horse_input" name="full"><br><br>
+
+    <label for="birthmonth_input">Birthmonth:</label>
+    <select name="month" id="birthmonth_input">
+        <option value="Spring">Spring</option>
+        <option value="Summer">Summer</option>
+        <option value="Fall">Fall</option>
+        <option value="Winter">Winter</option>
+    </select>
+
+    <label for="birthday_input">Birthday:</label>
+    <input type="number" id="birthday_input" name="birthday_input" min="1" max="28"><br><br>
+
+
+
+
+
+
+
+    <label for="pfp_input">Profile image link:</label>
+    <input type="text" id="pfp_input" name="profile"><br><br>
+
+    <label for="fullbody_input">Full sprite image link:</label>
+    <input type="text" id="fullbody_input" name="full"><br><br>
+
+
+
+
     <input type="submit">
 </form>
 
@@ -26,38 +59,38 @@
 
     <!--Profile picture-->
     <div id="pfp">
-        <img src="your image link" alt="Profile image" id="pfp_img">
+        <img src="" alt="Profile image" id="pfp_img">
     </div>
     <img src="pfpoverlay.png" alt="Base image, kind of required">
 
-    <div id="name">Holly</div>
+    <div id="name"></div>
 
     <p id="bio">
-        Bio bio bio noises
+
     </p>
 
 
     <div id="pet">
         <img src="example.png" alt="pet">
-        <h1>cat</h1>
+        <h1 id="petname"></h1>
     </div>
 
     <div id="horse">
         <img src="example.png" alt="horse">
-        <h1>Hoos</h1>
+        <h1 id="horsename"></h1>
     </div>
 
 
     <!--Birthday-->
     <div id="season">
-        Fall
+
     </div>
     <div id="day0">
-        1
+
     </div>
 
     <div id="day1">
-        5
+
     </div>
 
 
@@ -97,5 +130,8 @@
 
 
 </div>
+
+<button onclick='copy()'>Copy</button>
+
 </body>
 </html>

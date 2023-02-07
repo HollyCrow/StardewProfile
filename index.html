@@ -17,6 +17,16 @@
     <label for="bio_input" >Character biography:</label>
     <textarea rows="12" id="bio_input" name="full"></textarea><br><br>
 
+    <label for="pettype_input">pet:</label>
+    <select name="pet" id="pettype_input">
+        <option value="cat 1">cat 1</option>
+        <option value="cat 2">cat 2</option>
+        <option value="cat 3">cat 3</option>
+        <option value="dog 1">dog 1</option>
+        <option value="dog 2">dog 2</option>
+        <option value="dog 3">dog 3</option>
+    </select>
+
     <label for="pet_input">Pet name:</label>
     <input type="text" id="pet_input" name="full"><br><br>
 
@@ -35,18 +45,11 @@
     <input type="number" id="birthday_input" name="birthday_input" min="1" max="28"><br><br>
 
 
-
-
-
-
-
     <label for="pfp_input">Profile image link:</label>
     <input type="text" id="pfp_input" name="profile"><br><br>
 
     <label for="fullbody_input">Full sprite image link:</label>
     <input type="text" id="fullbody_input" name="full"><br><br>
-
-
 
 
     <input type="submit">
@@ -70,8 +73,9 @@
     </p>
 
 
+<!--    TODO: fix stretched pet image-->
     <div id="pet">
-        <img src="http://fc09.deviantart.net/fs70/f/2012/121/4/9/transparent__blank__by_madhatter2408-d4y5rky.png" alt="pet">
+        <img src="http://fc09.deviantart.net/fs70/f/2012/121/4/9/transparent__blank__by_madhatter2408-d4y5rky.png" alt="pet" id="pet_img">
         <h1 id="petname"></h1>
     </div>
 

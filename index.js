@@ -137,6 +137,16 @@ function dosubmit (event) {
         }
     }
 
+    let hated_images = document.getElementsByClassName("hated")
+    console.log(hated_images[0].src)
+    console.log(hate_input[0])
+    for (let f=0; f < hated_images.length; f++){ //TODO: copying image doesnt include friend images
+        hated_images[f].src = hate_input[f].value
+        if (hate_input[f].value == ""){
+            hated_images[f].src = "http://fc09.deviantart.net/fs70/f/2012/121/4/9/transparent__blank__by_madhatter2408-d4y5rky.png"
+        }
+    }
+
 
     // document.getElementById("name").innerHTML = name
 

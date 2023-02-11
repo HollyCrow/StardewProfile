@@ -9,6 +9,7 @@ const pets = {
 }
 
 const villagers = {
+    "null": "http://fc09.deviantart.net/fs70/f/2012/121/4/9/transparent__blank__by_madhatter2408-d4y5rky.png",
     "alex": "https://stardewvalleywiki.com/mediawiki/images/0/04/Alex.png",
     "elliott": "https://stardewvalleywiki.com/mediawiki/images/b/bd/Elliott.png",
     "harvey": "https://stardewvalleywiki.com/mediawiki/images/9/95/Harvey.png",
@@ -103,6 +104,8 @@ function dosubmit (event) {
     document.getElementById("day0").innerHTML = Math.floor(birthday/10).toString()
     document.getElementById("day1").innerHTML = (birthday-(Math.floor(birthday/10)*10)).toString()
     document.getElementById("pet_img").src = pets[pet_type]
+    document.getElementById("pfp_img").src = pfp
+    document.getElementById("full-image").src = full
 
     let friend_images = document.getElementsByClassName("friend_images")
     console.log(friend_images[0].src)

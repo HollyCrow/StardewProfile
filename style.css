@@ -31,10 +31,10 @@ body {
 }
 
 #pfp {
-    top: 201px;
-    left: 143px;
-    width: 367px;
-    height: 367px;
+    top: 200px;
+    left: 142px;
+    width: 370px;
+    height: 370px;
 
 }
 
@@ -61,12 +61,16 @@ body {
     font-size: 40px;
 }
 
-#full-image {
+#full_image {
     top: 189px;
     left: 1319px;
     width: 104px;
     height: 168px;
     /*background-color: #FFFFFF;*/
+}
+#full_image img {
+    width: 100%;
+    height: 100%;
 }
 
 #season {

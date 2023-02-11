@@ -93,8 +93,7 @@ function dosubmit (event) {
     let birthday = document.getElementById("birthday_input").value;
     let full = document.getElementById("fullbody_input").value;
     let pfp = document.getElementById("pfp_input").value;
-
-    console.log(birthmonth)
+    let friends_input = document.getElementsByClassName("friend")
 
     document.getElementById("name").innerHTML = name
     document.getElementById("bio").innerHTML = bio
@@ -104,6 +103,14 @@ function dosubmit (event) {
     document.getElementById("day0").innerHTML = Math.floor(birthday/10).toString()
     document.getElementById("day1").innerHTML = (birthday-(Math.floor(birthday/10)*10)).toString()
     document.getElementById("pet_img").src = pets[pet_type]
+
+    let friend_images = document.getElementsByClassName("friend_images")
+    console.log(friend_images[0].src)
+    console.log(friends_input[0])
+    for (let f=0; f < friend_images.length; f++){ //TODO: copying image doesnt include friend images
+        friend_images[f].src = friends_input[f].value
+    }
+
 
     // document.getElementById("name").innerHTML = name
 

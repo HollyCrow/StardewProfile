@@ -95,6 +95,8 @@ function dosubmit (event) {
     let full = document.getElementById("fullbody_input").value;
     let pfp = document.getElementById("pfp_input").value;
     let friends_input = document.getElementsByClassName("friend")
+    let loved_input = document.getElementsByClassName("love_input")
+    let hate_input = document.getElementsByClassName("hate_input")
 
     document.getElementById("name").innerHTML = name
     document.getElementById("bio").innerHTML = bio
@@ -104,14 +106,35 @@ function dosubmit (event) {
     document.getElementById("day0").innerHTML = Math.floor(birthday/10).toString()
     document.getElementById("day1").innerHTML = (birthday-(Math.floor(birthday/10)*10)).toString()
     document.getElementById("pet_img").src = pets[pet_type]
-    document.getElementById("pfp_img").src = pfp
-    document.getElementById("full-image").src = full
+    if (pfp == ""){
+        document.getElementById("pfp_img").src = "http://fc09.deviantart.net/fs70/f/2012/121/4/9/transparent__blank__by_madhatter2408-d4y5rky.png"
+    }else{
+        document.getElementById("pfp_img").src = pfp
+    }
+    if (full == ""){
+        document.getElementById("full-image").src = "http://fc09.deviantart.net/fs70/f/2012/121/4/9/transparent__blank__by_madhatter2408-d4y5rky.png"
+    }else{
+        document.getElementById("full-image").src = full
+    }
+
 
     let friend_images = document.getElementsByClassName("friend_images")
     console.log(friend_images[0].src)
     console.log(friends_input[0])
     for (let f=0; f < friend_images.length; f++){ //TODO: copying image doesnt include friend images
         friend_images[f].src = friends_input[f].value
+    }
+
+
+
+    let loved_images = document.getElementsByClassName("loved")
+    console.log(loved_images[0].src)
+    console.log(loved_input[0])
+    for (let f=0; f < loved_images.length; f++){ //TODO: copying image doesnt include friend images
+        loved_images[f].src = loved_input[f].value
+        if (loved_input[f].value == ""){
+            loved_images[f].src = "http://fc09.deviantart.net/fs70/f/2012/121/4/9/transparent__blank__by_madhatter2408-d4y5rky.png"
+        }
     }
 
 

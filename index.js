@@ -60,7 +60,13 @@ window.onload = function() {
     }
     // first_friend.innerHTML = villager_html
 }
+window.addEventListener("beforeunload", function (e) { // https://stackoverflow.com/questions/7317273/warn-user-before-leaving-web-page-with-unsaved-changes stolen code
+    var confirmationMessage = 'It looks like you have been editing something. '
+        + 'If you leave before saving, your changes will be lost.';
 
+    (e || window.event).returnValue = confirmationMessage;
+    return confirmationMessage;
+});
 
 function copy() {
     html2canvas(document.querySelector("#main"), {

@@ -17,7 +17,7 @@ const villagers = {
     "shane": "https://stardewvalleywiki.com/mediawiki/images/8/8b/Shane.png",
     "abigail": "https://stardewvalleywiki.com/mediawiki/images/8/88/Abigail.png",
     "emily": "https://stardewvalleywiki.com/mediawiki/images/2/28/Emily.png",
-    "harley": "https://stardewvalleywiki.com/mediawiki/images/1/1b/Haley.png",
+    "haley": "https://stardewvalleywiki.com/mediawiki/images/1/1b/Haley.png",
     "leah": "https://stardewvalleywiki.com/mediawiki/images/e/e6/Leah.png",
     "maru": "https://stardewvalleywiki.com/mediawiki/images/f/f8/Maru.png",
     "penny": "https://stardewvalleywiki.com/mediawiki/images/a/ab/Penny.png",

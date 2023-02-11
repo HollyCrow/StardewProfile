@@ -7,7 +7,6 @@ const pets = {
     "dog 3": "https://stardewvalleywiki.com/mediawiki/images/thumb/f/fc/Dog_3.png/48px-Dog_3.png",
     "horse": "https://stardewvalleywiki.com/mediawiki/images/c/c3/Horse.png"
 }
-
 const villagers = {
     "null": "http://fc09.deviantart.net/fs70/f/2012/121/4/9/transparent__blank__by_madhatter2408-d4y5rky.png",
     "alex": "https://stardewvalleywiki.com/mediawiki/images/0/04/Alex.png",
@@ -46,6 +45,7 @@ const villagers = {
     "willy": "https://stardewvalleywiki.com/mediawiki/images/8/82/Willy.png",
     "wizard": "https://stardewvalleywiki.com/mediawiki/images/c/c7/Wizard.png"
 }
+
 window.onload = function() {
     let villager_html = ""
     for ([key, value] of Object.entries(villagers)){
@@ -62,9 +62,10 @@ window.onload = function() {
 }
 
 
-
 function copy() {
-    html2canvas(document.querySelector("#main")).then(canvas => {
+    html2canvas(document.querySelector("#main"), {
+        useCORS: true
+    }).then(canvas => {
         canvas.toBlob(function (blob) {
             navigator.clipboard
                 .write([
@@ -121,7 +122,7 @@ function dosubmit (event) {
     let friend_images = document.getElementsByClassName("friend_images")
     console.log(friend_images[0].src)
     console.log(friends_input[0])
-    for (let f=0; f < friend_images.length; f++){ //TODO: copying image doesnt include friend images
+    for (let f=0; f < friend_images.length; f++){
         friend_images[f].src = friends_input[f].value
     }
 
@@ -130,7 +131,7 @@ function dosubmit (event) {
     let loved_images = document.getElementsByClassName("loved")
     console.log(loved_images[0].src)
     console.log(loved_input[0])
-    for (let f=0; f < loved_images.length; f++){ //TODO: copying image doesnt include friend images
+    for (let f=0; f < loved_images.length; f++){
         loved_images[f].src = loved_input[f].value
         if (loved_input[f].value == ""){
             loved_images[f].src = "http://fc09.deviantart.net/fs70/f/2012/121/4/9/transparent__blank__by_madhatter2408-d4y5rky.png"
@@ -140,7 +141,7 @@ function dosubmit (event) {
     let hated_images = document.getElementsByClassName("hated")
     console.log(hated_images[0].src)
     console.log(hate_input[0])
-    for (let f=0; f < hated_images.length; f++){ //TODO: copying image doesnt include friend images
+    for (let f=0; f < hated_images.length; f++){
         hated_images[f].src = hate_input[f].value
         if (hate_input[f].value == ""){
             hated_images[f].src = "http://fc09.deviantart.net/fs70/f/2012/121/4/9/transparent__blank__by_madhatter2408-d4y5rky.png"
@@ -155,6 +156,3 @@ function dosubmit (event) {
     // console.log(document.getElementById("profile").value)
     //pfp.alt="fuck"
 }
-
-
-

@@ -83,6 +83,23 @@ function copy() {
     });
 }
 
+
+function download() {
+    html2canvas(document.querySelector("#main"), {
+        useCORS: true
+    }).then(canvas => {
+        canvas.toBlob(function (blob) {
+            let imageURL = URL.createObjectURL(blob)
+            const link = document.createElement('a')
+            link.href = imageURL
+            link.download = 'stardew_profile.png'
+            document.body.appendChild(link)
+            link.click()
+            document.body.removeChild(link)
+        });
+    });
+}
+
 function dosubmit (event) {
     event.preventDefault();
 

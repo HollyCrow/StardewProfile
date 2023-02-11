@@ -8,6 +8,60 @@ const pets = {
     "horse": "https://stardewvalleywiki.com/mediawiki/images/c/c3/Horse.png"
 }
 
+const villagers = {
+    "alex": "https://stardewvalleywiki.com/mediawiki/images/0/04/Alex.png",
+    "elliott": "https://stardewvalleywiki.com/mediawiki/images/b/bd/Elliott.png",
+    "harvey": "https://stardewvalleywiki.com/mediawiki/images/9/95/Harvey.png",
+    "sam": "https://stardewvalleywiki.com/mediawiki/images/a/a8/Sebastian.png",
+    "sebastian": "https://stardewvalleywiki.com/mediawiki/images/a/a8/Sebastian.png",
+    "shane": "https://stardewvalleywiki.com/mediawiki/images/8/8b/Shane.png",
+    "abigail": "https://stardewvalleywiki.com/mediawiki/images/8/88/Abigail.png",
+    "emily": "https://stardewvalleywiki.com/mediawiki/images/2/28/Emily.png",
+    "harley": "https://stardewvalleywiki.com/mediawiki/images/1/1b/Haley.png",
+    "leah": "https://stardewvalleywiki.com/mediawiki/images/e/e6/Leah.png",
+    "maru": "https://stardewvalleywiki.com/mediawiki/images/f/f8/Maru.png",
+    "penny": "https://stardewvalleywiki.com/mediawiki/images/a/ab/Penny.png",
+    // --
+    "caroline": "https://stardewvalleywiki.com/mediawiki/images/8/87/Caroline.png",
+    "clint": "https://stardewvalleywiki.com/mediawiki/images/3/31/Clint.png",
+    "demitrius": "https://stardewvalleywiki.com/mediawiki/images/f/f9/Demetrius.png",
+    "dwarf": "https://stardewvalleywiki.com/mediawiki/images/e/ed/Dwarf.png",
+    "evelyn": "https://stardewvalleywiki.com/mediawiki/images/8/8e/Evelyn.png",
+    "george": "https://stardewvalleywiki.com/mediawiki/images/7/78/George.png",
+    "gus": "https://stardewvalleywiki.com/mediawiki/images/5/52/Gus.png",
+    "jas": "https://stardewvalleywiki.com/mediawiki/images/5/55/Jas.png",
+    "jodi": "https://stardewvalleywiki.com/mediawiki/images/4/41/Jodi.png",
+    "kent": "https://stardewvalleywiki.com/mediawiki/images/9/99/Kent.png",
+    "krobus": "https://stardewvalleywiki.com/mediawiki/images/7/71/Krobus.png",
+    "leo": "https://stardewvalleywiki.com/mediawiki/images/1/1d/Leo.png",
+    "lewis": "https://stardewvalleywiki.com/mediawiki/images/2/2b/Lewis.png",
+    "linus": "https://stardewvalleywiki.com/mediawiki/images/3/31/Linus.png",
+    "marnie": "https://stardewvalleywiki.com/mediawiki/images/5/52/Marnie.png",
+    "pam": "https://stardewvalleywiki.com/mediawiki/images/d/da/Pam.png",
+    "pierre": "https://stardewvalleywiki.com/mediawiki/images/7/7e/Pierre.png",
+    "robin": "https://stardewvalleywiki.com/mediawiki/images/1/1b/Robin.png",
+    "sandy": "https://stardewvalleywiki.com/mediawiki/images/4/4e/Sandy.png",
+    "vincent": "https://stardewvalleywiki.com/mediawiki/images/f/f1/Vincent.png",
+    "willy": "https://stardewvalleywiki.com/mediawiki/images/8/82/Willy.png",
+    "wizard": "https://stardewvalleywiki.com/mediawiki/images/c/c7/Wizard.png"
+}
+window.onload = function() {
+    let villager_html = ""
+    for ([key, value] of Object.entries(villagers)){
+        villager_html += `<option value="${value}">${key}</option>`
+    }
+    // console.log(villager_html)
+    // console.log(document.getElementById("first_friend").innerHTML)
+    // let first_friend = document.getElementById("first_friend")
+    let friends = document.getElementsByClassName("friend")
+    for (let f = 0; f < friends.length; f++){
+        friends[f].innerHTML = villager_html
+    }
+    // first_friend.innerHTML = villager_html
+}
+
+
+
 function copy() {
     html2canvas(document.querySelector("#main")).then(canvas => {
         canvas.toBlob(function (blob) {
